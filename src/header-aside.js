@@ -14,11 +14,19 @@ export default class Header_aside extends Component {
   }
 
   componentDidMount() {
+    this.beginSurnameAnimation();
+  }
+  
+  beginSurnameAnimation () {
+    this.setState((prevState) => {
+      prevState.surname.current = '';
+      prevState.surname.inc = 0;
+      return prevState;
+    });
     setTimeout(this.incSurname.bind(this), this.state.firstInterval);
   }
 
   incSurname () {
-    console.log(this.state.surname);
     if(this.state.surname) {
       this.setState((prevState) => {
         prevState.surname.current = prevState.surname.full.slice(0, prevState.surname.inc);
@@ -30,7 +38,6 @@ export default class Header_aside extends Component {
   }
 
   render () {
-    console.log('1');
     return (
       <a style={{
           width: 230,
