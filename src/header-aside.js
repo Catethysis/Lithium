@@ -15,6 +15,15 @@ export default class Header_aside extends Component {
 
   componentDidMount() {
     this.beginSurnameAnimation();
+    setTimeout(() => {
+      this.setState((prevState) => {
+        String.prototype.replaceAt=function(index, replacement) {
+          return this.substr(0, index) + replacement + this.substr(index + replacement.length);
+        }
+        prevState.surname.current = prevState.surname.current.replaceAt(3, 'ü');
+        return prevState;
+      });
+    }, 2000);
   }
   
   beginSurnameAnimation () {
