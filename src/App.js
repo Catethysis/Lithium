@@ -28,7 +28,7 @@ class Aside extends Component {
   }
 }
 
-class Contains extends Component {
+class Content extends Component {
   render () {
     return [
       <Aside active="main"/>,
@@ -55,7 +55,7 @@ class App extends Component {
         width: '100vw',
       }}>
         <Header />
-        <Contains />
+        <Content />
       </div>
     );
   }
