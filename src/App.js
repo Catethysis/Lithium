@@ -7,7 +7,7 @@ import Header_content from './header-content';
 class Header extends Component {
   render () {
     return [
-      <Header_aside name={<span><b>Li</b>[thium]</span>} />,
+      <Header_aside />,
       <Header_content />
     ]
   }
