@@ -10,7 +10,7 @@ import ContentPageHolder from './ContentPages/ContentPageHolder';
 class App extends Component {
   constructor() {
     super();
-    this.state = {active: 0};
+    this.state = {active: 1};
     this.asideSelect = this.asideSelect.bind(this);
   }
 
@@ -26,6 +26,8 @@ class App extends Component {
     return (
       <div style={{
         width: '100vw',
+        height: '100vh',
+        backgroundColor: '#333'
       }}>
         <HeaderAside />
         <HeaderContent />

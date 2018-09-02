@@ -1,0 +1,18 @@
+.¼ {
+    width: 25%;
+    height: 50px;
+    display: inline-block;
+    padding: 7px;
+    box-sizing: border-box;
+
+    top: -7px;
+    position: relative;
+}
+
+.¼:first-child {
+    padding-left: 0px;
+}
+
+.¼:last-child {
+    padding-right: 0px;
+}

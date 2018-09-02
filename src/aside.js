@@ -5,7 +5,7 @@ export default class Aside extends Component {
   render () {
     let items = [
       'Cards',
-      'Item2',
+      'Columns',
       'Item3',
       'Item4',
       'Item5',

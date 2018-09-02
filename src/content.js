@@ -10,7 +10,8 @@ export default class Content extends Component {
         position: 'relative',
         display: 'block',
 
-        backgroundColor: '#eee',
+        backgroundColor: '#333',
+        color: '#fff',
         boxShadow: 'inset 1px 4px 9px -6px'
       }}>
       {this.props.children}
