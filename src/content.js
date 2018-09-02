@@ -11,7 +11,7 @@ export default class Content extends Component {
 
         backgroundColor: '#ddd'
       }}>
-      .
+      {this.props.children}
       </div>
     )
   }

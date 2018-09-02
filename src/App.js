@@ -9,7 +9,7 @@ import Content from './content';
 class App extends Component {
   constructor() {
     super();
-    this.state = {active: 3};
+    this.state = {active: 0};
     this.asideSelect = this.asideSelect.bind(this);
   }
 
@@ -29,7 +29,9 @@ class App extends Component {
         <HeaderAside />
         <HeaderContent />
         <Aside active={this.state.active} onSelect={this.asideSelect}/>
-        <Content />
+        <Content>
+          {'Page ' + this.state.active}
+        </Content>
       </div>
     );
   }
