@@ -6,6 +6,7 @@ export default class Content extends Component {
       <div style={{
         marginLeft: 230,
         marginBottom: 0,
+        padding: 15,
         position: 'relative',
         display: 'block',
 
