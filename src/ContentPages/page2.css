@@ -1,5 +1,13 @@
-.¼ {
-    width: 25%;
+.⅟ { width: 100%;}
+.½ { width: 50%; }
+.⅓ { width: 33.3333%; }
+.¼ { width: 25%; }
+.⅕ { width: 20%; }
+.⅙ { width: 16.6667%; }
+.⅐ { width: 14.2857%; }
+.⅛ { width: 12.5%; }
+
+.⅟, .½, .⅓, .¼, .⅕, .⅙, .⅐, .⅛ {
     height: 50px;
     display: inline-block;
     padding-left: 8px;
@@ -7,10 +15,8 @@
     box-sizing: border-box;
 }
 
-.¼:first-child {
-    padding-left: 0px;
-}
-
-.¼:last-child {
-    padding-right: 0px;
+.columns_holder {
+    margin-bottom: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
