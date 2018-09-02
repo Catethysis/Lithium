@@ -5,6 +5,7 @@ import HeaderAside from './header-aside';
 import HeaderContent from './header-content';
 import Aside from './aside';
 import Content from './content';
+import ContentPageHolder from './ContentPages/ContentPageHolder';
 
 class App extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class App extends Component {
         <HeaderContent />
         <Aside active={this.state.active} onSelect={this.asideSelect}/>
         <Content>
-          {'Page ' + this.state.active}
+          <ContentPageHolder page={this.state.active} />
         </Content>
       </div>
     );

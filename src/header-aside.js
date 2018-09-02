@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './header-aside.css'
 
 export default class Header_aside extends Component {
   constructor () {
@@ -23,7 +24,7 @@ export default class Header_aside extends Component {
         prevState.surname.current = prevState.surname.current.replaceAt(3, 'ü');
         return prevState;
       });
-    }, 2000);
+    }, 1000);
   }
   
   beginSurnameAnimation () {
@@ -64,7 +65,7 @@ export default class Header_aside extends Component {
           backgroundColor: '#367fa9',
           float: 'top'
         }}>
-        <b>Li</b>[{this.state.surname.current}]
+        <b>Li</b><span className='bracket'>[</span>{this.state.surname.current}<span className='bracket'>]</span>
       </a>
     )
   }
