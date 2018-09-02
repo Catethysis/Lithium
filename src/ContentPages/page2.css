@@ -14,10 +14,10 @@
     padding-right: 8px;
     box-sizing: border-box;
     vertical-align: top;
+    height: auto;
 }
 
 .columns_holder {
-    margin-bottom: 15px;
     margin-left: -8px;
     margin-right: -8px;
 }

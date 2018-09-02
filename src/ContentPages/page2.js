@@ -5,7 +5,7 @@ import {Card, colors} from './Card'
 export default class extends Component {
   render () {
     return [
-      <div className="1_of_⅟ columns_holder">
+      <div id="1_of_⅟" className="columns_holder">
         <div className="⅟">
           <Card color={colors.warning}>
             Column 1/1
@@ -13,7 +13,7 @@ export default class extends Component {
         </div>
       </div>,
 
-      <div className="2_of_½ columns_holder">
+      <div id="2_of_½" className="columns_holder">
         <div className="½">
           <Card color={colors.warning}>
             Column 1/2
@@ -26,7 +26,7 @@ export default class extends Component {
         </div>
       </div>,
 
-      <div className="3_of_⅓ columns_holder">
+      <div id="3_of_⅓" className="columns_holder">
         <div className="⅓">
           <Card color={colors.warning}>
             Column 1/3
@@ -44,7 +44,7 @@ export default class extends Component {
         </div>
       </div>,
 
-      <div className="4_of_¼ columns_holder">
+      <div id="4_of_¼" className="columns_holder">
         <div className="¼">
           <Card color={colors.warning}>
             Column 1/4
@@ -67,7 +67,7 @@ export default class extends Component {
         </div>
       </div>,
 
-      <div className="5_of_⅕ columns_holder">
+      <div id="5_of_⅕" className="columns_holder">
         <div className="⅕">
           <Card color={colors.warning}>
             Column 1/5
@@ -95,7 +95,7 @@ export default class extends Component {
         </div>
       </div>,
 
-      <div className="6_of_⅙ columns_holder">
+      <div id="6_of_⅙" className="columns_holder">
         <div className="⅙">
           <Card color={colors.warning}>
             Column 1/6
@@ -124,6 +124,47 @@ export default class extends Component {
         <div className="⅙">
           <Card color={colors.secondary}>
             Column 6/6
+          </Card>
+        </div>
+      </div>,
+
+      <div id="¼+¼+½" className="columns_holder">
+        <div className="¼">
+          <Card color={colors.warning}>
+            Column 1/3<br/>with information<br />in several lines
+          </Card>
+        </div>
+        <div className="¼">
+          <Card color={colors.success}>
+            Column 2/3
+          </Card>
+        </div>
+        <div className="½">
+          <Card color={colors.info}>
+            Column 3/3
+          </Card>
+        </div>
+      </div>,
+
+      <div id="⅙+⅙+½+⅙" className="columns_holder">
+        <div className="⅙">
+          <Card color={colors.warning}>
+            Column 1/4<br/>with information<br />in several lines
+          </Card>
+        </div>
+        <div className="⅙">
+          <Card color={colors.success}>
+            Column 2/4
+          </Card>
+        </div>
+        <div className="½">
+          <Card color={colors.info}>
+            Column 3/4
+          </Card>
+        </div>
+        <div className="⅙">
+          <Card color={colors.danger}>
+            Column 4/4
           </Card>
         </div>
       </div>
