@@ -11,7 +11,7 @@ let colors = {
     dark:      '#343a40',
 };
 
-class LongCard extends Component {
+class Card extends Component {
     render () {
       let shadow = '0px 0px 3px 1px ' + this.props.color; //ddd
       return (
@@ -32,4 +32,4 @@ class LongCard extends Component {
     }
   }
 
-export {LongCard, colors}
+export {Card, colors}

@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import './page2.css'
-import {LongCard, colors} from './longCard.js'
+import {Card, colors} from './Card'
 
 export default class extends Component {
   render () {
     return [
       <div className="¼">
-        <LongCard color={colors.warning}>
+        <Card color={colors.warning}>
           Column 1
-        </LongCard>
+        </Card>
       </div>,
       <div className="¼">
-        <LongCard color={colors.success}>
+        <Card color={colors.success}>
           Column 2
-        </LongCard>
+        </Card>
       </div>,
       <div className="¼">
-        <LongCard color={colors.info}>
+        <Card color={colors.info}>
           Column 3
-        </LongCard>
+        </Card>
       </div>,
       <div className="¼">
-        <LongCard color={colors.danger}>
+        <Card color={colors.danger}>
           Column 4
-        </LongCard>
+        </Card>
       </div>
     ]
   }
