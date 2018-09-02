@@ -12,7 +12,7 @@ export default class Content extends Component {
 
         backgroundColor: '#333',
         color: '#fff',
-        boxShadow: 'inset 1px 4px 9px -6px'
+        boxShadow: 'inset 0px 7px 9px -7px #38b'
       }}>
       {this.props.children}
       </div>
