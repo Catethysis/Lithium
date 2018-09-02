@@ -14,15 +14,15 @@ export default class Aside extends Component {
       'Item8'
     ];
     return (
-      <div style={{
+      <ul style={{
         width: 230,
         position: 'absolute',
         minHeight: '100%',
         padding: 0,
+        margin: 0,
 
         backgroundColor: '#2e3e4e'
       }}>
-      <ul>
         {
           items.map((item, i) => {
             return <li className={'aside-li' + (i == 3 ? ' active' : '')}>
@@ -31,7 +31,6 @@ export default class Aside extends Component {
           })
         }
       </ul>
-      </div>
     )
   }
 }
