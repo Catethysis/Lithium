@@ -4,7 +4,7 @@ import './aside.css'
 export default class Aside extends Component {
   render () {
     let items = [
-      'Item1',
+      'Cards',
       'Item2',
       'Item3',
       'Item4',
