@@ -7,6 +7,20 @@ import Aside from './aside';
 import Content from './content';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {active: 3};
+    this.asideSelect = this.asideSelect.bind(this);
+  }
+
+  asideSelect(event) {
+    let newActive = event.target.dataset['id'];
+    this.setState((prevState) => {
+      prevState.active = newActive;
+      return prevState;
+    });
+  }
+
   render() {
     return (
       <div style={{
@@ -14,7 +28,7 @@ class App extends Component {
       }}>
         <HeaderAside />
         <HeaderContent />
-        <Aside active="main"/>
+        <Aside active={this.state.active} onSelect={this.asideSelect}/>
         <Content />
       </div>
     );

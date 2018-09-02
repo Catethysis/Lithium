@@ -38,10 +38,10 @@ export default class Header_aside extends Component {
   incSurname () {
     if(this.state.surname) {
       this.setState((prevState) => {
-        prevState.surname.current = prevState.surname.full.slice(0, prevState.surname.inc);
+        prevState.surname.current = prevState.surname.full.slice(0, prevState.surname.inc++);
         return prevState;
       });
-      if(this.state.surname.inc++ <= this.state.surname.full.length)
+      if(this.state.surname.inc <= this.state.surname.full.length + 1)
         setTimeout(this.incSurname.bind(this), this.state.interval);
     }
   }
