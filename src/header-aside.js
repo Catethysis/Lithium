@@ -16,15 +16,6 @@ export default class Header_aside extends Component {
 
   componentDidMount() {
     this.beginSurnameAnimation();
-    setTimeout(() => {
-      this.setState((prevState) => {
-        String.prototype.replaceAt = function(index, replacement) {
-          return this.substr(0, index) + replacement + this.substr(index + replacement.length);
-        }
-        prevState.surname.current = prevState.surname.current.replaceAt(3, 'ü');
-        return prevState;
-      });
-    }, 1000);
   }
   
   beginSurnameAnimation () {
@@ -36,6 +27,14 @@ export default class Header_aside extends Component {
     setTimeout(this.incSurname.bind(this), this.state.firstInterval);
   }
 
+  makeUmlaut () {
+    this.setState((prevState) => {
+      prevState.surname.current = prevState.surname.current.substr(0, 3) + 'ü' + 
+        prevState.surname.current.substr(4);
+      return prevState;
+    });
+  }
+
   incSurname () {
     if(this.state.surname) {
       this.setState((prevState) => {
@@ -44,6 +43,8 @@ export default class Header_aside extends Component {
       });
       if(this.state.surname.inc <= this.state.surname.full.length + 1)
         setTimeout(this.incSurname.bind(this), this.state.interval);
+      else
+        setTimeout(this.makeUmlaut.bind(this), this.state.interval * 10);
     }
   }
 

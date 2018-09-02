@@ -25,7 +25,7 @@ export default class Aside extends Component {
       }}>
         {
           items.map((item, i) => {
-            let liClass = 'aside-li' + (i == this.props.active ? ' active' : '');
+            let liClass = 'aside-li' + (i === Number(this.props.active) ? ' active' : '');
             return <li key={i} className={liClass} data-id={i} onClick={this.props.onSelect}>
               {item}
             </li>
