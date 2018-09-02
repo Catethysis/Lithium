@@ -18,6 +18,7 @@ class LongCard extends Component {
         <div style={{
           minHeight: '1em',
           padding: 15,
+          marginBottom: 15,
           
           borderRadius: 3,
           boxShadow: shadow,
