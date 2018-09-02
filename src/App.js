@@ -20,6 +20,7 @@ class App extends Component {
       prevState.active = newActive;
       return prevState;
     });
+    window.history.pushState({}, null, newActive);
   }
 
   render() {
