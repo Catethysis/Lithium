@@ -10,7 +10,7 @@ import ContentPageHolder from './ContentPages/ContentPageHolder';
 class App extends Component {
   constructor() {
     super();
-    this.state = {active: 1};
+    this.state = {active: 3};
     this.asideSelect = this.asideSelect.bind(this);
   }
 

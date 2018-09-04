@@ -88,7 +88,7 @@ export default class extends Component {
         </Col>
       </Row>,
 
-      <h2>Columns with multiline text</h2>,
+      <h2>Flex columns with multiline text</h2>,
 
       <Row split={4}>
         <Col slots={1} color={colors.warning}>
@@ -104,7 +104,7 @@ export default class extends Component {
 
       <Row split={6}>
         <Col slots={1} color={colors.warning}>
-        Column 1/4<br/>with information<br />in several lines
+          Column 1/4<br/>with information<br />in several lines
         </Col>
         <Col slots={1} color={colors.success}>
           Column 2/4

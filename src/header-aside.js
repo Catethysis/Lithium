@@ -64,7 +64,9 @@ export default class Header_aside extends Component {
 
           display: 'inline-block',
           backgroundColor: '#367fa9',
-          float: 'top'
+          float: 'top',
+
+          letterSpacing: '10'
         }}>
         <b>Li</b><span className='bracket'>[</span>{this.state.surname.current}<span className='bracket'>]</span>
       </a>
